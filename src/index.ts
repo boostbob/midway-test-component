@@ -1,4 +1,4 @@
-export { AutoConfiguration as Configuration } from './configuration';
-export * from './service/bookService';
-export * from './controller/testController';
+export {AutoConfiguration as Configuration} from './configuration';
+export * from './service/book';
+export * from './controller/test';
 export * from './schedule/report';

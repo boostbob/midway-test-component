@@ -18,9 +18,11 @@
   ],
   "license": "MIT",
   "devDependencies": {
+    "@midwayjs/cli": "^1.2.38",
     "@midwayjs/core": "^2.3.0",
     "@midwayjs/decorator": "^2.3.0",
-    "@midwayjs/cli": "^1.2.38",
+    "@midwayjs/koa": "^2.3.0",
+    "@midwayjs/mock": "^2.3.0",
     "@types/jest": "^26.0.10",
     "@types/node": "14",
     "cross-env": "^6.0.0",

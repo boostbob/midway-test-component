@@ -1,5 +1,5 @@
 // src/schedule/hello.ts
-import { Provide, Schedule, Inject, CommonSchedule } from '@midwayjs/decorator';
+import {CommonSchedule, Inject, Provide, Schedule} from '@midwayjs/decorator';
 
 @Provide()
 @Schedule({
@@ -7,7 +7,7 @@ import { Provide, Schedule, Inject, CommonSchedule } from '@midwayjs/decorator';
   type: 'worker', // 指定某一个 worker 执行
 })
 export class HelloCron implements CommonSchedule {
-  
+
   @Inject()
   ctx: any;
 
@@ -15,4 +15,5 @@ export class HelloCron implements CommonSchedule {
   async exec() {
     this.ctx.logger.info(process.pid, 'report from schedule');
   }
+
 }
