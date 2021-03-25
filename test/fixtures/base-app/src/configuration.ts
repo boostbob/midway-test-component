@@ -1,6 +1,6 @@
 import {Configuration} from '@midwayjs/decorator';
 import * as test from '../../../../src';
-import {ILifeCycle, WebRouterCollector} from "@midwayjs/core";
+import {ILifeCycle} from "@midwayjs/core";
 import {join} from 'path';
 
 @Configuration({
@@ -12,9 +12,8 @@ import {join} from 'path';
 export class ContainerConfiguration implements ILifeCycle {
 
   async onReady() {
-    const collector = new WebRouterCollector();
-    console.log(await collector.getFlattenRouterTable());
+    // const collector = new WebRouterCollector();
+    // console.log(await collector.getFlattenRouterTable());
   }
-
 
 }

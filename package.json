@@ -6,7 +6,7 @@
   "typings": "dist/index.d.ts",
   "scripts": {
     "build": "midway-bin build -c",
-    "test": "midway-bin test --ts",
+    "test": "midway-bin test --ts -w",
     "cov": "midway-bin cov --ts",
     "ci": "npm run cov"
   },

@@ -22,7 +22,7 @@ describe('/test/feature.foo.ts', () => {
       console.log(result.text);
     });
 
-    it('should be megre controller', async () => {
+    it('should be megre local controller', async () => {
       const result = await createHttpRequest(app)
         .get('/foo/bar');
       expect(result.status).toBe(200);
