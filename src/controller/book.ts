@@ -2,13 +2,13 @@ import {Controller, Get, Inject, Provide} from '@midwayjs/decorator';
 import {BookSerivce} from '../service/book';
 
 @Provide()
-@Controller('/test')
-export class TestController {
+@Controller('/books')
+export class BookController {
 
   @Inject()
   bookService: BookSerivce;
 
-  @Get("/book")
+  @Get("/1")
   async book() {
     return this.bookService.getBookById();
   }

@@ -1,9 +1,9 @@
 import {close, createApp, createHttpRequest} from '@midwayjs/mock';
 import {IMidwayApplication} from "@midwayjs/core";
 
-describe('/test/feature.foo.ts', () => {
+describe('/controller/book.ts', () => {
 
-  describe('test new features', () => {
+  describe('book features', () => {
 
     let app: IMidwayApplication;
 
@@ -15,9 +15,9 @@ describe('/test/feature.foo.ts', () => {
       await close(app);
     });
 
-    it('should register test controller', async () => {
+    it('should register book controller', async () => {
       const result = await createHttpRequest(app)
-        .get('/test/book');
+        .get('/books/1');
       expect(result.status).toBe(200);
       console.log(result.text);
     });
