@@ -5,6 +5,6 @@ import {join} from 'path';
   namespace: 'book',
   importConfigs: [join(__dirname, 'config')]
 })
-export class AutoConfiguration {
+export class AutoConfiguration /*implements ILifeCycle*/{
   //
 }
